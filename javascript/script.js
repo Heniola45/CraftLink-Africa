@@ -9,11 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Show success message
       successMessage.style.display = "block";
 
-      // Hide message after 4 seconds
-      setTimeout(() => {
-        successMessage.style.display = "none";
-      }, 4000);
-
+      
       // Reset form fields
       form.reset();
     });
