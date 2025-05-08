@@ -1,14 +1,4 @@
-/* Remove default browser spacing */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: var(--background-light);
-  font-family: "Lato", sans-serif;
-  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -20,9 +10,9 @@ body {
 
 .page-title {
   font-size: var(--header-text);
-  color: var(--big-text-color);
+  color: var(--primary-color);
   margin-bottom: 30px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .checkout-grid {
@@ -47,38 +37,42 @@ h2 {
 }
 
 /* Order items styling */
-.order-items {
+.order-item {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.item {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 16px;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
   border-bottom: 1px solid #eee;
 }
 
-.item:last-child {
-  border-bottom: none;
+.item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
 }
 
 .item-name {
-  font-weight: 500;
+  font-weight: 800;
+  font-size: var(--Mdbody-text-size);
+  color: var(--big-text-color);
 }
 
 .item-quantity {
   font-size: var(--fs-sm);
+  font-weight: 600;
   color: #666;
-}
-
-.item-price {
-  font-weight: 500;
 }
 
 .item-price,
 .summary-row p:last-child {
+  font-size: var(--fs-sm);
   font-weight: 600;
   color: #0a0a0a;
 }
