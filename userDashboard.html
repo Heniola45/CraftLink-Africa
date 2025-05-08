@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CraftLink Africa – Dashboard</title>
+    <!-- add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- local style -->
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-top">
+        <div class="logo">
+          <h1>TransLink Africa</h1>
+        </div>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="user-profile">
+          <img src="/assets/img/sc1.jpg" alt="Profile" class="profile-icon" />
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for categories or artisans..."
+            autocomplete="off"
+          />
+          <ul id="suggestionList" class="suggestion-list"></ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="dashboard-container">
+      <!-- Category 1: Clothes -->
+      <div class="category-section">
+        <div class="category-title">Clothes</div>
+        <div class="artisan-scroll-row">
+          <!-- 15 Artisan Cards -->
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/67c63970-4c8f-4c0f-91dc-7e2711f0306e.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Kiki's Design's</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/African Dashiki for Men Top and Pants Set African….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Native Hub</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/OGE African Print One Sleeve Drape Mini Dress.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Traditional Queens</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/This Womens Dresses item by Fortuneexpress has 4….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Heritage Hall</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/67c63970-4c8f-4c0f-91dc-7e2711f0306e.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Kiki's</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/African Dashiki for Men Top and Pants Set African….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">FASHION 4 U</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/OGE African Print One Sleeve Drape Mini Dress.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Dazzle</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/This Womens Dresses item by Fortuneexpress has 4….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Rainbow Collection</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/67c63970-4c8f-4c0f-91dc-7e2711f0306e.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Couture for Kids</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/African Dashiki for Men Top and Pants Set African….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Better than Channel</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/OGE African Print One Sleeve Drape Mini Dress.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Eleven</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/This Womens Dresses item by Fortuneexpress has 4….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">BloodLine</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/67c63970-4c8f-4c0f-91dc-7e2711f0306e.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">BrownSkinGirl</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/African Dashiki for Men Top and Pants Set African….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">FashionSavers</div>
+          </div>
+          <div class="artisan-card">
+            <img
+              src="/assets/img/fashion/OGE African Print One Sleeve Drape Mini Dress.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Blank</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories 2: Accessories -->
+      <div class="category-section">
+        <div class="category-title">Accessories</div>
+        <div class="artisan-scroll-row">
+          <div class="artisan-card 1">
+            <img
+              src="/assets/img/accessories/(Ad) Discover how to elevate your style with our….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Accessories Hub</div>
+          </div>
+          <div class="artisan-card 2">
+            <img
+              src="/assets/img/accessories/4a2b1c5b-35bb-45e5-8277-873f9c690169.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">TemmyMorr</div>
+          </div>
+          <div class="artisan-card 3">
+            <img
+              src="/assets/img/accessories/Beautiful, stylish African bracelets handmade from….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Handmade Beads</div>
+          </div>
+          <div class="artisan-card 4">
+            <img
+              src="/assets/img/accessories/f2509e0c-fe7b-4f8b-b609-c061033e2c8f.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Shade</div>
+          </div>
+          <div class="artisan-card 5">
+            <img
+              src="/assets/img/accessories/(Ad) Discover how to elevate your style with our….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Golden</div>
+          </div>
+          <div class="artisan-card 6">
+            <img
+              src="/assets/img/accessories/4a2b1c5b-35bb-45e5-8277-873f9c690169.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Chainz</div>
+          </div>
+          <div class="artisan-card 7">
+            <img
+              src="/assets/img/accessories/Beautiful, stylish African bracelets handmade from….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Accessories and More</div>
+          </div>
+          <div class="artisan-card 8">
+            <img
+              src="/assets/img/accessories/f2509e0c-fe7b-4f8b-b609-c061033e2c8f.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Fifi's Drip</div>
+          </div>
+          <div class="artisan-card 9">
+            <img
+              src="/assets/img/accessories/(Ad) Discover how to elevate your style with our….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Almost Real</div>
+          </div>
+          <div class="artisan-card 10">
+            <img
+              src="/assets/img/accessories/4a2b1c5b-35bb-45e5-8277-873f9c690169.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">gem's & more</div>
+          </div>
+          <div class="artisan-card 11">
+            <img
+              src="/assets/img/accessories/Beautiful, stylish African bracelets handmade from….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Handmade Bangles</div>
+          </div>
+          <div class="artisan-card 12">
+            <img
+              src="/assets/img/accessories/f2509e0c-fe7b-4f8b-b609-c061033e2c8f.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Masks</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories 3: Automobile Repairs -->
+      <div class="category-section">
+        <div class="category-title">Automobile Repairs</div>
+        <div class="artisan-scroll-row">
+          <div class="artisan-card 1">
+            <img
+              src="/assets/img/automobile/15 Suggested Car Repairs by Car Mileage _ Family….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Tony's Car Repairs</div>
+          </div>
+          <div class="artisan-card 2">
+            <img
+              src="/assets/img/automobile/67f32290-66fd-4f3b-bf95-151d0e025f9f.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Revv to the Max</div>
+          </div>
+          <div class="artisan-card 3">
+            <img
+              src="/assets/img/automobile/Auto Repair Service in Abbotsford.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Fix it Felix</div>
+          </div>
+          <div class="artisan-card 4">
+            <img
+              src="/assets/img/automobile/db8ba056-a769-4f4b-b7ae-dfd0facefca3.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">AutoRepair</div>
+          </div>
+          <div class="artisan-card 5">
+            <img
+              src="/assets/img/automobile/e252d188-d928-4ca5-a254-b3afcfc4f162.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Auto Glowup</div>
+          </div>
+          <div class="artisan-card 6">
+            <img
+              src="/assets/img/automobile/15 Suggested Car Repairs by Car Mileage _ Family….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Forever Mileage</div>
+          </div>
+          <div class="artisan-card 7">
+            <img
+              src="/assets/img/automobile/67f32290-66fd-4f3b-bf95-151d0e025f9f.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Repairs by Her</div>
+          </div>
+          <div class="artisan-card 8">
+            <img
+              src="/assets/img/automobile/Auto Repair Service in Abbotsford.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Automotive Femmes</div>
+          </div>
+          <div class="artisan-card 9">
+            <img
+              src="/assets/img/automobile/db8ba056-a769-4f4b-b7ae-dfd0facefca3.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Mobile Kids</div>
+          </div>
+          <div class="artisan-card 10">
+            <img
+              src="/assets/img/automobile/e252d188-d928-4ca5-a254-b3afcfc4f162.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Lagos Mechanics</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories 4: Plumbers -->
+      <div class="category-section">
+        <div class="category-title">Local Plumbers</div>
+        <div class="artisan-scroll-row">
+          <div class="artisan-card 1">
+            <img
+              src="/assets/img/plumbers/1914268b-9d47-40ab-975c-13db0708801e.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Ore the Plumber</div>
+          </div>
+          <div class="artisan-card 2">
+            <img
+              src="/assets/img/plumbers/6 Important Services Offered by Expert Plumbers….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Blue Collar Plumbing</div>
+          </div>
+          <div class="artisan-card 3">
+            <img
+              src="/assets/img/plumbers/8430a971-2e85-4df8-9851-037011f5f141.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Flushed</div>
+          </div>
+          <div class="artisan-card 4">
+            <img
+              src="/assets/img/plumbers/Jo Plumbing offers a comprehensive range of….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Water Bending</div>
+          </div>
+          <div class="artisan-card 5">
+            <img
+              src="/assets/img/plumbers/1914268b-9d47-40ab-975c-13db0708801e.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Plumber Pelumi</div>
+          </div>
+          <div class="artisan-card 6">
+            <img
+              src="/assets/img/plumbers/6 Important Services Offered by Expert Plumbers….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Local Plumber</div>
+          </div>
+          <div class="artisan-card 7">
+            <img
+              src="/assets/img/plumbers/8430a971-2e85-4df8-9851-037011f5f141.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Family Plumbing</div>
+          </div>
+          <div class="artisan-card 8">
+            <img
+              src="/assets/img/plumbers/Jo Plumbing offers a comprehensive range of….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Plumbing</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories 5: MakeUp -->
+      <div class="category-section">
+        <div class="category-title">Makeup & Beauty</div>
+        <div class="artisan-scroll-row">
+          <div class="artisan-card 1">
+            <img
+              src="/assets/img/makeup/27719bec-f831-4d0b-8e14-605f9bf2855a.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Glitz & Glam</div>
+          </div>
+          <div class="artisan-card 2">
+            <img
+              src="/assets/img/makeup/30731cef-bc27-4f79-98a2-578ea4022827.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Black Beauty</div>
+          </div>
+          <div class="artisan-card 3">
+            <img
+              src="/assets/img/makeup/5158437d-ff94-4ed6-9924-bff0212576f1.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Dammy's Looks</div>
+          </div>
+          <div class="artisan-card 4">
+            <img
+              src="/assets/img/makeup/@muranastasiia _ Chanel is the quintessential….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Muranastasiia</div>
+          </div>
+          <div class="artisan-card 5">
+            <img
+              src="/assets/img/makeup/c0e3d877-fa1d-43a9-9b8a-611f151eb8af.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">k-Beauty</div>
+          </div>
+          <div class="artisan-card 6">
+            <img
+              src="/assets/img/makeup/27719bec-f831-4d0b-8e14-605f9bf2855a.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Owambe Glam</div>
+          </div>
+          <div class="artisan-card 7">
+            <img
+              src="/assets/img/makeup/30731cef-bc27-4f79-98a2-578ea4022827.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Lagos Babes</div>
+          </div>
+          <div class="artisan-card 8">
+            <img
+              src="/assets/img/makeup/5158437d-ff94-4ed6-9924-bff0212576f1.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">MakeUp by Lola</div>
+          </div>
+          <div class="artisan-card 9">
+            <img
+              src="/assets/img/makeup/@muranastasiia _ Chanel is the quintessential….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Quintessential</div>
+          </div>
+          <div class="artisan-card 10">
+            <img
+              src="/assets/img/makeup/c0e3d877-fa1d-43a9-9b8a-611f151eb8af.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Dolled Up</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories 6: Shoes -->
+      <div class="category-section">
+        <div class="category-title">Handmade Shoes</div>
+        <div class="artisan-scroll-row">
+          <div class="artisan-card 1">
+            <img
+              src="/assets/img/shoes/171da704-43a2-441f-bf74-52564ff78406.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Happy Feet</div>
+          </div>
+          <div class="artisan-card 2">
+            <img
+              src="/assets/img/shoes/3bb205ad-2805-4346-94be-931e7796017b.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Fun Slips</div>
+          </div>
+          <div class="artisan-card 3">
+            <img
+              src="/assets/img/shoes/5fa29eb8-fbc1-416b-8615-bdddf3b7fe23.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Couture Feet</div>
+          </div>
+          <div class="artisan-card 4">
+            <img
+              src="/assets/img/shoes/Description_  Res Ipsa's Crochet Mules are made….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Can't believe it's Just Crochet</div>
+          </div>
+          <div class="artisan-card 5">
+            <img
+              src="/assets/img/shoes/Fit_ True to size, order usual size_ Includes_ Box….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Fit_True</div>
+          </div>
+          <div class="artisan-card 6">
+            <img
+              src="/assets/img/shoes/171da704-43a2-441f-bf74-52564ff78406.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Island Gals</div>
+          </div>
+          <div class="artisan-card 7">
+            <img
+              src="/assets/img/shoes/3bb205ad-2805-4346-94be-931e7796017b.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Strut</div>
+          </div>
+          <div class="artisan-card 8">
+            <img
+              src="/assets/img/shoes/5fa29eb8-fbc1-416b-8615-bdddf3b7fe23.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Fasion Feet</div>
+          </div>
+          <div class="artisan-card 9">
+            <img
+              src="/assets/img/shoes/Description_  Res Ipsa's Crochet Mules are made….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Wooly Fun</div>
+          </div>
+          <div class="artisan-card 10">
+            <img
+              src="/assets/img/shoes/Fit_ True to size, order usual size_ Includes_ Box….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Sandal Moment</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories 7: Food-->
+      <div class="category-section">
+        <div class="category-title">Food & Catering</div>
+        <div class="artisan-scroll-row">
+          <div class="artisan-card 1">
+            <img
+              src="/assets/img/food/792dcf88-d4a3-45f2-9e0e-cfde0a68e7d8.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Suya Joint</div>
+          </div>
+          <div class="artisan-card 2">
+            <img
+              src="/assets/img/food/Bowl of African chicken stew on Rice.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Nigerian Recipes</div>
+          </div>
+          <div class="artisan-card 3">
+            <img
+              src="/assets/img/food/dc803a87-1030-4dab-bee4-16b5ece2855b.jpeg"
+              class="artisan-image"
+            />
+            <div class="Native Food">Fashion Hub 3</div>
+          </div>
+          <div class="artisan-card 4">
+            <img
+              src="/assets/img/food/dfb50958-2638-49b6-a343-7c3bf76a7ef2.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Jollof Rival</div>
+          </div>
+          <div class="artisan-card 5">
+            <img
+              src="/assets/img/food/ea5c7627-278f-4472-93d8-3440c23f1199.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Soak Garri</div>
+          </div>
+          <div class="artisan-card 6">
+            <img
+              src="/assets/img/food/Looking for a Nigerian soup recipe_ Follow our….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">African Soul</div>
+          </div>
+          <div class="artisan-card 7">
+            <img
+              src="/assets/img/food/Making Egusi Soup Recipe (with Assorted Meat)….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Hexagon</div>
+          </div>
+          <div class="artisan-card 8">
+            <img
+              src="/assets/img/food/792dcf88-d4a3-45f2-9e0e-cfde0a68e7d8.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">FFO</div>
+          </div>
+          <div class="artisan-card 9">
+            <img
+              src="/assets/img/food/Bowl of African chicken stew on Rice.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Beyong Tastee</div>
+          </div>
+          <div class="artisan-card 10">
+            <img
+              src="/assets/img/food/dc803a87-1030-4dab-bee4-16b5ece2855b.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Big Back</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories 7: Art-->
+      <div class="category-section">
+        <div class="category-title">Art</div>
+        <div class="artisan-scroll-row">
+          <div class="artisan-card 1">
+            <img
+              src="/assets/img/arts/3275b726-102c-4332-af73-dbcc7e1ef656.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Art Life</div>
+          </div>
+          <div class="artisan-card 2">
+            <img
+              src="/assets/img/arts/7be4d52e-9472-4fcc-a409-8c48ceb3b3b3.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Captured Life</div>
+          </div>
+          <div class="artisan-card 3">
+            <img
+              src="/assets/img/arts/Amazon_com_ LZIMU African American Wall Art Black….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Brown Skin Girl</div>
+          </div>
+          <div class="artisan-card 4">
+            <img
+              src="/assets/img/arts/Bedroom decor art for Melanie.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Decor Paintings</div>
+          </div>
+          <div class="artisan-card 5">
+            <img
+              src="/assets/img/arts/Looking for elegant Black home decor_ This fine….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Elegance</div>
+          </div>
+          <div class="artisan-card 6">
+            <img
+              src="/assets/img/arts/3275b726-102c-4332-af73-dbcc7e1ef656.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Art Life</div>
+          </div>
+          <div class="artisan-card 7">
+            <img
+              src="/assets/img/arts/7be4d52e-9472-4fcc-a409-8c48ceb3b3b3.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Captured Life</div>
+          </div>
+          <div class="artisan-card 8">
+            <img
+              src="/assets/img/arts/Amazon_com_ LZIMU African American Wall Art Black….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Brown Skin Girl</div>
+          </div>
+          <div class="artisan-card 9">
+            <img
+              src="/assets/img/arts/Bedroom decor art for Melanie.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Decor Painting</div>
+          </div>
+          <div class="artisan-card 10">
+            <img
+              src="/assets/img/arts/Looking for elegant Black home decor_ This fine….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Elegance</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories 8: Crafts -->
+      <div class="category-section">
+        <div class="category-title">Crafts</div>
+        <div class="artisan-scroll-row">
+          <div class="artisan-card 1">
+            <img
+              src="/assets/img/crafts/40 DIY Candle Holders_ Unique Ideas To Light Up….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Candles from my Culture</div>
+          </div>
+          <div class="artisan-card 2">
+            <img
+              src="/assets/img/crafts/ba099031-430d-47a9-b086-05ef35ba48c4.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Twines and Crafts</div>
+          </div>
+          <div class="artisan-card 3">
+            <img
+              src="/assets/img/crafts/Discover fun, creative craft ideas for adults! Get….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Rainbow Vases</div>
+          </div>
+          <div class="artisan-card 4">
+            <img
+              src="/assets/img/crafts/PRICES MAY VARY_ Kid-Friendly & Unleash Kids'….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Lit Up</div>
+          </div>
+          <div class="artisan-card 5">
+            <img
+              src="/assets/img/crafts/40 DIY Candle Holders_ Unique Ideas To Light Up….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Candles from my Culture</div>
+          </div>
+          <div class="artisan-card 6">
+            <img
+              src="/assets/img/crafts/ba099031-430d-47a9-b086-05ef35ba48c4.jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Twines & Crafts</div>
+          </div>
+          <div class="artisan-card 7">
+            <img
+              src="/assets/img/crafts/Discover fun, creative craft ideas for adults! Get….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Rainbow Vases</div>
+          </div>
+          <div class="artisan-card 8">
+            <img
+              src="/assets/img/crafts/PRICES MAY VARY_ Kid-Friendly & Unleash Kids'….jpeg"
+              class="artisan-image"
+            />
+            <div class="artisan-name">Lit Up</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>TransLink Africa</h3>
+          <p>
+            Connecting you with skilled artisans and trusted services across
+            Africa.
+          </p>
+        </div>
+
+        <div class="footer-section links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Become an Artisan</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section contact">
+          <h4>Contact Us</h4>
+          <p>Email: support@translinkafrica.com</p>
+          <p>Phone: +234 800 000 0000</p>
+          <p>Location: Lagos, Nigeria</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 TransLink Africa. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

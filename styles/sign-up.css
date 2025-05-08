@@ -1,0 +1,176 @@
+body {
+  font-family: "Lato", sans-seri;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #0a0a0a;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  height: 5vh;
+  padding: 20px;
+  background-color: #f8f8f8;
+  font-size: 24px;
+  display: flex;
+  border-bottom: #353a4a 2px solid;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 80vw;
+}
+
+main {
+  width: 700px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+#artesian-container,
+#user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #353a4a;
+  text-align: center;
+}
+legend {
+  align-self: center;
+  font-size: 18px;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.name-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.name-container label {
+  width: 20vw;
+  font-weight: bold;
+  margin-bottom: 5px;
+  gap: 15px;
+}
+
+label {
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 5px;
+
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+#submit-button {
+  align-self: center;
+  padding: 10px 20px;
+  border: none;
+  gap: 30px;
+  margin-left: 150px;
+  background-color: #b8660e;
+  color: #0a0a0a;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 40%;
+  transition: transform 0.2s ease;
+}
+
+#user-button {
+  padding: 10px 20px;
+  border: none;
+  gap: 30px;
+  background-color: #b8660e;
+  color: #0a0a0a;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 40%;
+  transition: transform 0.2s ease;
+}
+#artesian-button {
+  background-color: #457a97;
+  align-self: center;
+  padding: 10px 20px;
+  border: none;
+  gap: 30px;
+  color: #0a0a0a;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 40%;
+  transition: transform 0.2s ease;
+}
+#button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+button:hover {
+  background-color: #d35400;
+  transform: scale(1.1);
+}
+
+h1 {
+  align-self: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}

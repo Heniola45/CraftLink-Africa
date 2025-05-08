@@ -1,37 +1,76 @@
- /* remove default browser spacing*/
+/* remove default browser spacing*/
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
- 
+
+.container {
+  -webkit-text-fill-color: #34607d;
+  width: 200px;
+  margin: 30px auto;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #d35400;
+  border-radius: 10px;
+  box-shadow: #b8660e 5px 5px;
+}
+
+button {
+  width: 90px;
+  height: 20px;
+  margin: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: background color 0.3s ease-in-out;
+}
 :root {
-    /* colors to be used*/
+  /* colors to be used*/
 
-    --primary-color: #B8660E;
-    --primary-dark-hover: #d35400;
-    --secondary-color: #457A97;
-    --background-light: #f8f8f8;
-    --text-color: #0A0A0A;
-    --big-text-color: #353A4A; 
+  --primary-color: #b8660e;
+  --primary-dark-hover: #d35400;
+  --secondary-color: #457a97;
+  --background-light: #f8f8f8;
+  --text-color: #0a0a0a;
+  --big-text-color: #353a4a;
 
-
-    /* Font Sizes */
-    --fs-xs: 12px;
-    --fs-sm: 14px;
-    --body-text-: 16px;
-    --Mdbody-text-size: 18px;
-    --fs-lg: 24px;
-    --fs-xl: 32px;
-    --header-text: 48px; 
+  /* Font Sizes */
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --body-text-: 16px;
+  --Mdbody-text-size: 18px;
+  --fs-lg: 24px;
+  --fs-xl: 32px;
+  --header-text: 48px;
 }
 
-  
-/*title text style*/
-/* the font-family 'Lato sans-serif', has been linked
+#confirm-order-button {
+  background-color: #d35400;
+  color: #b8660e;
+}
+#confirm-order-button:hover {
+  background-color: #d35400;
+}
+#cancel-order-button {
+  background-color: #d35400;
+  color: #d35400;
+  -webkit-text-fill-color: #f8f8f8;
+}
+#cancel-order-button-container {
+  background-color: #d35400;
+}
+#back-to-home-button {
+  background-color: #d35400;
+  color: #d35400;
+  -webkit-text-fill-color: #f8f8f8;
+  /*title text style*/
+  /* the font-family 'Lato sans-serif', has been linked
 * and is available for your use
 * */
-body {
+  body {
     background-color: var(--background-light);
     font-family: "Lato", sans-serif;
-  }

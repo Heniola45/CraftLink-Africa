@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <!-- add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- local style -->
+    <link rel="stylesheet" href="../styles/sign-up.css" />
+  </head>
+  <body>
+     <header>
+        <nav class="navbar">
+          <div class="logo">Artesian</div>
+          <div><a href="../index.html">Back</a></div>
+          
+        </nav>
+     </header>
+    
+    
+    <main>
+
+
+          <section><h1>Welcome to our sign up page</h1>
+            <div id="form1-container" >
+              
+              <form id="form">
+                  <fieldset>
+                      <legend>Please select your category:</legend>
+                  </fieldset>
+                </form>
+                <div id="button-container">
+
+                  <button  id="artesian-button">An Artesian</button>
+                  <button  id="user-button">A User</button>
+                </div>
+                
+            </div>
+            <div id="artesian-container"   >
+              <form id="artesian-form" class="hidden">
+                <fieldset>
+                  <legend>Enter your details</legend>
+      
+                  <label for="firstName"
+                    >First Name:
+                    <input type="text" id="firstName" name="fullName" required />
+                  </label>
+
+
+                  <label for="lastName"
+                    >Last Name:
+
+                    <input type="text" id="lastName" name="lastName"required/>
+                  </label>
+      
+                  
+                    
+                  
+      
+                  <label for="email"
+                    >Email:
+                    <input type="email" id="email" name="email" required />
+                  </label>
+
+                  <label for="phoneNumber"
+                    >Phone Number:
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required />
+
+                
+                </label>
+
+                <label for="address"   
+                  >Address:
+                  <input type="text" id="address" name="address" required />
+                </label>
+
+                <label for="city"
+                  >City:
+                  <input type="text" id="city" name="city" required />
+                </label>
+                  
+                  <label for="state"
+                    >State: 
+                    <input type="text" id="state" name="state" required />
+                  </label>
+                  
+                  <label for="zipCode"
+                    >Zip Code:
+                    <input type="text" id="zipCode" name="zipCode" required />
+                  </label>
+
+                  <label for="businessName"
+                    >Business Name:
+                    <input type="text" id="businessName" name="businessName" required />
+                  </label>
+
+                  <label for="typeOfArt"
+                    >Type of Art:
+                    <input type="text" id="typeOfArt" name="typeOfArt" required />
+                  </label>
+
+                  <label for="Description"
+                    >Description:
+                    <input name="message" style="height:150px" ; id="Description" name="Description" required/>
+                  </label>
+      
+                  <label  for="Password">Password</label>
+                   <input  Class="password" data-val="true" 
+                   data-val-maxlength="Password must not exceed 128 characters
+                   " data-val-maxlength-max="128" data-val-required="The Password field is required." 
+                   id="Password" maxlength="128" name="Password" type="password" />
+                  
+                </fieldset>
+                <button  id="submit-button" type="submit">Submit</button>
+              </form>
+            </div>
+
+            <!-- User sign up form -->
+  
+           <div id="user-container" >
+            <div id="user-form" class="hidden">
+              <fieldset>
+                <legend>Enter your details</legend>
+    
+  
+          
+    
+                <div class="name-container">
+                  <label for="firstName"
+                  >First Name: <br>
+                  <input type="text" id="firstName" name="firstName" required />
+                  </label>
+    
+                  <label for="lastName"
+                  >Last Name: <br>
+                  <input type="text" id="lastName" name="lastName" required />
+                </label>
+                </div>
+    
+                <label for="email"
+                  >Email:
+                  <input type="email" id="email" name="email" required />
+                </label>
+
+                <label for="Address">
+                  Address:
+                  <input type="text" id="address" name="address" required />
+                </label>
+
+                <div id="location">
+                  <label for="city"
+                  >City:
+                  <input type="text" id="city" name="city" required />
+                </label>
+                  
+                  <label for="state"    
+                    >State: 
+                    <input type="text" id="state" name="state" required />
+                  </label>
+                </div>
+            
+
+                  <label for="phoneNumber"
+                    >Phone Number:  
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required />   
+
+                  </label>
+
+                
+                <label  for="Password">Password</label>
+                <input  Class="password" data-val="true" 
+                data-val-maxlength="Password must not exceed 128 characters
+                " data-val-maxlength-max="128" data-val-required="The Password field is required." 
+                id="Password" maxlength="128" name="Password" type="password" />
+              </fieldset>
+              <button id="submit-button" type="submit">Submit</button>
+            </form>
+           </div></section>
+           
+      </main>
+      <script src="../javascript/sign-up.js"></script>
+    </body>
+  </html>
+  
+  </body>
+</html>
