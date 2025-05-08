@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artisans Profile</title>
+  <!-- add fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <!-- local style -->
+  <link rel="stylesheet" href="styles/artisans-profile.css" />
+</head>
+
+<body>
+  <div class="profile-container">
+    <section class="seller-info">
+      <h1>Seller's Profile</h1>
+      <div class="seller-info-flex">
+        <img src="assets/Artisans-Profile-img/download.jpeg" alt="Seller photo" class="seller-avatar" />
+        <div class="seller-info-ps">
+          <p class="seller-name">Adanna <span class="seller-other-name">O.</span></p>
+          <p class="seller-location">⟟ Lagos, Nigeria</p>
+          <p class="seller-bio">
+            Adanna is a textile artist blending tradition with modern flair. Each piece is handwoven with care, telling the stories of her heritage.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-gallery">
+      <h2>Products</h2>
+      <div class="products-grid js-products-list" id="productList">
+        <!-- Products will be injected here with JavaScript -->
+      </div>
+    </section>
+  </div>
+
+  <script src="/javascript/artisans-profile.js" defer></script>
+</body>
+
+</html>
