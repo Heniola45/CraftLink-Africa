@@ -24,8 +24,11 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   width: 80vw;
+}
+
+a {
+  color: #353a4a;
 }
 
 main {
@@ -54,7 +57,8 @@ main {
 }
 
 #artesian-container,
-#user-container {
+#user-container,
+#message {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,27 +81,6 @@ legend {
   font-size: 18px;
 }
 
-.name-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
-}
-
-.name-container input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-}
-
-.name-container label {
-  width: 20vw;
-  font-weight: bold;
-  margin-bottom: 5px;
-  gap: 15px;
-}
-
 label {
   width: 100%;
   font-weight: bold;
@@ -113,46 +96,45 @@ input {
   width: 100%;
 }
 
-#submit-button {
+#submit-button,
+#back-button {
   align-self: center;
   padding: 10px 20px;
   border: none;
   gap: 30px;
-  margin-left: 150px;
+  margin-left: 40px;
   background-color: #b8660e;
-  color: #0a0a0a;
+  color: white;
   font-size: 1rem;
   cursor: pointer;
   margin-top: 20px;
-  width: 40%;
+  width: 30%;
   transition: transform 0.2s ease;
+  border-radius: 5px;
 }
 
-#user-button {
+#submit-button {
+  margin-left: 200px;
+}
+
+#user-button,
+#artesian-button {
   padding: 10px 20px;
   border: none;
   gap: 30px;
   background-color: #b8660e;
-  color: #0a0a0a;
+  color: white;
   font-size: 1rem;
   cursor: pointer;
   margin-top: 20px;
   width: 40%;
   transition: transform 0.2s ease;
+  border-radius: 5px;
 }
 #artesian-button {
   background-color: #457a97;
-  align-self: center;
-  padding: 10px 20px;
-  border: none;
-  gap: 30px;
-  color: #0a0a0a;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 20px;
-  width: 40%;
-  transition: transform 0.2s ease;
 }
+
 #button-container {
   display: flex;
   flex-direction: row;
@@ -166,11 +148,37 @@ button:hover {
   transform: scale(1.1);
 }
 
+#submit:hover {
+  background-color: #d35400;
+  transform: scale(1.1);
+}
+
+p a {
+  color: orangered;
+}
+
+p a:hover {
+  font-size: 24px;
+}
+
 h1 {
   align-self: center;
 }
 
+#submit-button a {
+  text-decoration: none;
+}
 section {
   display: flex;
   flex-direction: column;
+}
+footer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  background-color: #b8660e;
+  font-size: 14px;
+  color: white;
+  margin-top: 50px;
 }
