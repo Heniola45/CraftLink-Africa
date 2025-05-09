@@ -1,5 +1,17 @@
 body {
   line-height: 1.6;
+  animation: slideInPage 0.6s ease-out;
+}
+
+@keyframes slideInPage {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .container {
