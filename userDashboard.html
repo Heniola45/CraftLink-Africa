@@ -17,13 +17,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <!-- local style -->
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/userDashboard.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="header-top">
         <div class="logo">
-          <h1>TransLink Africa</h1>
+          <img
+            src="/logo svg/logo header.svg"
+            alt="CraftLink Africa Logo"
+            class="logo"
+          />
         </div>
 
         <nav class="main-nav">
@@ -36,23 +40,26 @@
         </nav>
 
         <div class="user-profile">
-          <img src="/assets/img/sc1.jpg" alt="Profile" class="profile-icon" />
-        </div>
-      </div>
+          <img src="assets/img/sc1.jpg" alt="Profile" class="profile-icon" />
 
-      <div class="header-bottom">
-        <div class="search-container">
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="Search for categories or artisans..."
-            autocomplete="off"
-          />
-          <ul id="suggestionList" class="suggestion-list"></ul>
+          <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">3</span>
+          </div>
         </div>
       </div>
     </header>
-
+    <div class="header-bottom">
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for categories or artisans..."
+          autocomplete="off"
+        />
+        <ul id="suggestionList" class="suggestion-list"></ul>
+      </div>
+    </div>
     <div class="dashboard-container">
       <!-- Category 1: Clothes -->
       <div class="category-section">
@@ -773,7 +780,11 @@
     <footer class="site-footer">
       <div class="footer-content">
         <div class="footer-section about">
-          <h3>TransLink Africa</h3>
+          <img
+            src="/logo svg/logo footer.svg"
+            alt="CraftLink Africa Logo"
+            class="Logo"
+          />
           <p>
             Connecting you with skilled artisans and trusted services across
             Africa.
@@ -803,6 +814,6 @@
       </div>
     </footer>
 
-    <script src="javascript/script.js"></script>
+    <script src="/javascript/script.js"></script>
   </body>
 </html>
