@@ -17,22 +17,27 @@
     <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
-  <body>
-    <header class="site-header">
-      <div class="container header-flex">
-        <div class="logo">CraftLink Africa</div>
-        
-        <nav class="main-nav">
-          <a href="#">HomePage</a>
-          <a href="about.html" class="about-page">About Us</a>
-          <a href="services.html" class="services-page">Local Services</a>
-        </nav>
-        
-        <div class="header-cta">
-          <a href="marketplace.html" class="cta-button">Explore Marketplace</a>
-        </div>
-      </div>
-    </header>
+    <section>
+        <header class="site-header">
+            <div class="container header-flex">
+                <div class="logo">
+                    <img src="assets/logo header.svg" alt="Logo Header" />
+                </div>
+                
+                <nav class="main-nav">
+                <a href="index.html">HomePage</a>
+                <a href="about.html" class="about-page">About Us</a>
+                <a href="services.html" class="services-page">Local Services</a>
+                </nav>
+                
+                
+                <div class="hero-button">
+                    <a href="./pages/login-in.html" class="cta-btn2">Login</a>
+                    <a href="./pages/sign-up.html" class="cta-btn">SignUp</a>
+                </div>
+            </div>
+        </header>
+    </section>
     
   
     <section class="hero">
@@ -41,9 +46,8 @@
           <h2>Connecting Local Talent to The Global Market</h2>
           <p>We believe in the power of local talent to inspire global change. Our platform connects African artisans, creators, and small-scale producers with international customers who value authenticity, culture, and creativity. </p>
           
-          <div class="hero-button">
-            <a href="Tsignup.html" class="cta-btn">Local Talent SignUp</a>
-            <a href="Csignup.html" class="cta-btn2">Hire Local Talent</a>
+          <div class="header-cta">
+            <a href="userDashboard.html" class="cta-button">Explore Marketplace</a>
           </div>
           
         </div>
@@ -182,7 +186,7 @@
         </div>
           
         <div class="seeAll-cta">
-            <a href="marketplace.html" class="seeAllcta-button">See All</a>
+            <a href="userDashboard.html" class="seeAllcta-button">See All</a>
         </div>
     </section>
 
@@ -227,7 +231,7 @@
             <p>Your satisfaction is our main goal. Click on the “Hire Local Talent” button below to find and hire a service immediately.</p>
             
             <div class="hero-button">
-              <a href="Csignup.html" class="cta-btn">Hire Local Talent</a>
+              <a href="./pages/sign-up.html" class="book-btn">Hire Local Talent</a>
             </div>
             
           </div>
@@ -264,7 +268,7 @@
         <div class="cta-content">
           <h2>Showcase Your Talent to the World</h2>
           <p>Join our growing network of African artisans and get discovered by global customers. Share your passion, grow your brand, and earn from your craft.</p>
-          <a href="Tsignup.html" class="Tsignup-btn">Become an Artisan</a>
+          <a href="./pages/sign-up.html" class="Tsignup-btn">Become an Artisan</a>
         </div>
       </section>
       
@@ -277,9 +281,9 @@
         <div class="offer-detail">
             <p class="offer-para">LIMITED OFFER</p>
             <h3 class="offer-header">50% Off On Some Of Our Products</h3>
-            <button class="product-name-btnoffer">
-                Grab it Now
-            </button>
+            <div>
+                <a href="discountpage.html" class="cta-btn">Grab it Now</a>
+            </div>
         </div>
       </section>
 
@@ -298,11 +302,24 @@
 
     <footer class="site-footer">
         <div class="footer-content">
+          
           <div class="footer-about">
-            <h3>CraftLink Africa</h3>
+            <img src="assets/logo footer.svg" alt="CraftLink Africa Logo" class="footer-logo" />
             <p>Connecting you to authentic African craftsmanship while empowering local artisans across the continent.</p>
+      
+            
+            <div class="footer-social">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
           </div>
       
+          
           <div class="footer-links">
             <h4>Quick Links</h4>
             <ul>
@@ -313,23 +330,43 @@
             </ul>
           </div>
       
-          <div class="footer-social">
-            <h4>Follow Us</h4>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-x-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+        
+          <div class="footer-links">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">Order Tracking</a></li>
+            </ul>
           </div>
+      
+        
+          <div class="footer-links">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Affiliate Program</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Support</h4>
+            <ul>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">All Collections</a></li>
+            </ul>
+        </div>
         </div>
       
         <div class="footer-bottom">
           <p>&copy; 2025 CraftLink Africa. All rights reserved.</p>
         </div>
-      </footer>
-      
-
-  </body>
+    </footer>
 </body>
+    
 </html>
