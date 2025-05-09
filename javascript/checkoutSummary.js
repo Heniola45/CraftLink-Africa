@@ -9,6 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Navigate back to billing page
   backButton.addEventListener("click", function () {
-    window.location.href = "billing.html"; // Replace with actual billing page path
+    window.location.href = "checkout.html"; // Replace with actual billing page path
   });
 });
