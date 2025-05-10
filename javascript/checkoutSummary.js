@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Proceed to confirmation page
   proceedButton.addEventListener("click", function () {
-    window.location.href = "confirmation.html"; // Replace with actual confirmation page path
+    window.location.href = "successfulpage.html"; // Replace with actual confirmation page path
   });
 
   // Navigate back to billing page
