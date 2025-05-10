@@ -20,35 +20,30 @@
     <link rel="stylesheet" href="styles/userDashboard.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="header-top">
-        <div class="logo">
-          <img
-            src="/logo svg/logo header.svg"
-            alt="CraftLink Africa Logo"
-            class="logo"
-          />
-        </div>
-
-        <nav class="main-nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="user-profile">
-          <img src="assets/img/sc1.jpg" alt="Profile" class="profile-icon" />
-
-          <div class="cart-icon">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="cart-count">3</span>
+    <section>
+      <header class="site-header">
+          <div class="container-header-flex">
+              <div class="logo">
+                  <img src="assets/logo header.svg" alt="Logo Header" />
+              </div>
+              
+              <nav class="main-nav">
+              <a href="index.html">HomePage</a>
+              <a href="about.html" class="about-page">About Us</a>
+              <a href="services.html" class="services-page">Local Services</a>
+              </nav>
+              
+              
+              <div class="user-profile">
+                <img src="assets/img/sc1.jpg" alt="Profile" class="profile-icon" />
+      
+                <div class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
           </div>
-        </div>
-      </div>
-    </header>
+      </header>
+    </section>
     <div class="header-bottom">
       <div class="search-container">
         <input
@@ -71,21 +66,23 @@
               src="/assets/img/fashion/67c63970-4c8f-4c0f-91dc-7e2711f0306e.jpeg"
               class="artisan-image"
             />
-            <div class="artisan-name">Kiki's Design's</div>
+            <div class="artisan-name"><a href="artisanprofile.html">Kiki's Design's</a></div>
           </div>
           <div class="artisan-card">
             <img
               src="/assets/img/fashion/African Dashiki for Men Top and Pants Set African….jpeg"
               class="artisan-image"
             />
-            <div class="artisan-name">Native Hub</div>
+          
+            <div class="artisan-name"><a href="artisanprofile.html">Native Hub</a></div>
           </div>
           <div class="artisan-card">
             <img
               src="/assets/img/fashion/OGE African Print One Sleeve Drape Mini Dress.jpeg"
               class="artisan-image"
             />
-            <div class="artisan-name">Traditional Queens</div>
+        
+            <div class="artisan-name"><a href="artisanprofile.html">Traditional Queens</a></div>
           </div>
           <div class="artisan-card">
             <img
@@ -779,41 +776,73 @@
 
     <footer class="site-footer">
       <div class="footer-content">
-        <div class="footer-section about">
-          <img
-            src="/logo svg/logo footer.svg"
-            alt="CraftLink Africa Logo"
-            class="Logo"
-          />
-          <p>
-            Connecting you with skilled artisans and trusted services across
-            Africa.
-          </p>
+        
+        <div class="footer-about">
+          <img src="assets/logo footer.svg" alt="CraftLink Africa Logo" class="footer-logo" />
+          <p>Connecting you to authentic African craftsmanship while empowering local artisans across the continent.</p>
+    
+          
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-x-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
         </div>
-
-        <div class="footer-section links">
+    
+        
+        <div class="footer-links">
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">Become an Artisan</a></li>
-            <li><a href="#">Support</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+    
+      
+        <div class="footer-links">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Order Tracking</a></li>
+          </ul>
+        </div>
+    
+      
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+            <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
 
-        <div class="footer-section contact">
-          <h4>Contact Us</h4>
-          <p>Email: support@translinkafrica.com</p>
-          <p>Phone: +234 800 000 0000</p>
-          <p>Location: Lagos, Nigeria</p>
-        </div>
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Discount</a></li>
+          <li><a href="#">All Collections</a></li>
+          </ul>
       </div>
-
+      </div>
+    
       <div class="footer-bottom">
-        <p>&copy; 2025 TransLink Africa. All rights reserved.</p>
+        <p>&copy; 2025 CraftLink Africa. All rights reserved.</p>
       </div>
-    </footer>
+  </footer>
 
-    <script src="/javascript/script.js"></script>
   </body>
+
+  <script src="/javascript/script.js"></script>
 </html>
