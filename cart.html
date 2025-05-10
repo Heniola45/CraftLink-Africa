@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftLink Africa</title>
+    <!-- add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- local style -->
+    <link rel="stylesheet" href="styles/cart.css" />
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">CraftLink Africa</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search CraftLink">
+      <button class="search-btn">Search</button>
+    </div>
+    <div class="nav-icons">
+      <div class="account"><i class="fas fa-user"></i> Account</div>
+      <div class="cart"><i class="fas fa-shopping-cart"></i> Cart</div>
+    </div>
+    <div class="cart">
+        <i class="fas fa-shopping-cart"></i> Cart
+        <span id="cart-count" class="cart-count">0</span>
+      </div>
+  </nav>
+
+  <!-- Currency Selector -->
+  <div class="currency-select">
+    <label for="currencySelector">Currency:</label>
+    <select id="currencySelector">
+      <option value="NGN">₦ NGN</option>
+      <option value="USD">$ USD</option>
+      <option value="EUR">€ EUR</option>
+    </select>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Cart Items Section -->
+    <section class="cart-section">
+      <h2>Shopping Cart</h2>
+
+      <div class="cart-item">
+        <img src="assets/img/fashion/African Dashiki for Men Top and Pants Set African….jpeg" alt="Item 1">
+        <div class="item-details">
+          <h3>African Dashiki for Men. Top and Pants Set.</h3>
+          <div class="quantity-controls">
+            <button class="decrease">-</button>
+            <span class="quantity">1</span>
+            <button class="increase">+</button>
+        </div>
+        <button class="remove"><i class="fas fa-trash"></i> Remove Item</button>
+      </div>
+      <div class="item-price" data-price="15000">₦ 15,000</div>
+    </div>
+
+      <div class="cart-item">
+        <img src="assets/img/crafts/40 DIY Candle Holders_ Unique Ideas To Light Up….jpeg" alt="Item 2">
+        <div class="item-details">
+          <h3>DIY Candle Holders</h3>
+          <div class="quantity-controls">
+            <button class="decrease">-</button>
+            <span class="quantity">1</span>
+            <button class="increase">+</button>
+        </div>
+        <button class="remove"><i class="fas fa-trash"></i> Remove Item</button>
+      </div>
+      <div class="item-price" data-price="20000">₦ 20,000</div>
+    </div>
+
+      <div class="cart-item">
+        <img src="assets/img/accessories/Beautiful, stylish African bracelets handmade from….jpeg" alt="Item 3">
+        <div class="item-details">
+          <h3>Beautiful, Stylish African Handmade Bracelets</h3>
+          <div class="quantity-controls">
+            <button class="decrease">-</button>
+            <span class="quantity">1</span>
+            <button class="increase">+</button>
+        </div>
+        <button class="remove"><i class="fas fa-trash"></i> Remove Item</button>
+      </div>
+      <div class="item-price" data-price="12000">₦ 12,000</div>
+    </div>
+  </section>
+
+    <!-- Cart Summary Section -->
+    <aside class="summary-section">
+        <h3>Cart Summary</h3>
+        <p>Subtotal: <strong>₦ 47,000</strong></p>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </aside>
+    </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>CraftLink Africa</h3>
+        <p>
+          Connecting you with skilled artisans and trusted services across
+          Africa.
+        </p>
+      </div>
+
+      <div class="footer-section links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Become an Artisan</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section contact">
+        <h4>Contact Us</h4>
+        <p>Email: support@craftlinkafrica.com</p>
+        <p>Phone: +234 800 000 0000</p>
+        <p>Location: Lagos, Nigeria</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 CraftLink Africa. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

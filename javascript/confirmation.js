@@ -54,7 +54,6 @@ function updateSuggestions(query) {
       li.addEventListener("click", () => {
         searchInput.value = item;
         suggestionList.style.display = "none";
-        // Optional: redirect or display results
       });
       suggestionList.appendChild(li);
     });

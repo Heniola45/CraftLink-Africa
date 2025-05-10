@@ -1,0 +1,81 @@
+/* remove default browser spacing*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  
+  width: 70%;
+  margin: 30px auto;
+  padding: 2rem;
+  background-color: white;
+  border: 1px solid #d35400;
+  border-radius: 8px;
+  box-shadow: #b8660e 2px 2px;
+}
+.container h1 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+
+}
+.container p {
+  color: var(--text-color);
+  font-size: var(--body-text-);
+  margin-bottom: 1rem;
+  
+}
+.btn {
+  border: none;
+  color:  var(--background-light);
+  background-color: var(--primary-color);
+  padding: 0.75rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+ 
+}
+
+.btn:hover{
+  color: var(--background-light);
+  background-color: var(--primary-dark-hover);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+    
+  :root {
+    /* colors to be used*/
+
+    --primary-color: #b8660e;
+    --primary-dark-hover: #d35400;
+    --secondary-color: #457a97;
+    --background-light: #f8f8f8;
+    --text-color: #0a0a0a;
+    --big-text-color: #353a4a;
+
+    /* Font Sizes */
+    --fs-xs: 12px;
+    --fs-sm: 14px;
+    --body-text-: 16px;
+    --Mdbody-text-size: 18px;
+    --fs-lg: 24px;
+    --fs-xl: 32px;
+    --header-text: 48px;
+  }
+
+ 
+  /*title text style*/
+  /* the font-family 'Lato sans-serif', has been linked
+* and is available for your use
+* */
+  body {
+    background-color: var(--background-light);
+    font-family: "Lato", sans-serif;
+  }
+}
