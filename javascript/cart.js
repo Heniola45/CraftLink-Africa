@@ -18,3 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+  .hidden {
+    display: none;
+  }
