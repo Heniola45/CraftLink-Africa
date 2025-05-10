@@ -29,55 +29,84 @@
 /* the font-family 'Lato sans-serif', has been linked
 * and is available for your use
 * */
+.site-header {
+  width: 100%;
+  height: auto;
+  background-color: var(--background-light);;
+  color: var(--text-color);
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed; 
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-header-flex {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  
+  
+}
+
+.main-nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex: 1;
+  padding-left: 4rem;
+}
+
 .main-nav a {
-  text-decoration: none; /* remove default underline */
-  color: #333;
-  position: relative;
-  padding-bottom: 4px;
-  transition: color 0.2s;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: var(--fs-sm);
+  font-weight: 500;
 }
 
 .main-nav a:hover {
-  color: #b8660e; /* optional: color change */
+  color: var(--primary-color);
+  text-decoration: underline;
+
 }
 
-.main-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #b8660e;
-  transition: width 0.3s ease;
+.header-cta {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.user-profile {
+.user-profile{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  column-gap: 1rem;
 }
 
-.main-nav a:hover::after {
-  width: 100%;
+.profile-icon {
+  width: 30px;           
+  height: 30px;
+  border-radius: 50%;    
+  object-fit: cover;     
 }
+
+
 .cart-icon {
   position: relative;
   font-size: 22px;
   color: #b8660e;
   cursor: pointer;
-}
-
-.cart-count {
-  position: absolute;
-  top: -8px;
-  right: -10px;
-  background: red;
-  color: white;
-  font-size: 12px;
-  padding: 2px 6px;
-  border-radius: 50%;
 }
 
 body {
@@ -88,6 +117,9 @@ body {
   color: #353a4a;
 }
 
+.header-bottom{
+  padding-top: 10rem;
+}
 .search-container {
   max-width: 50%;
   margin: auto;
@@ -184,6 +216,13 @@ body {
   color: #457a97;
 }
 
+.artisan-name a{
+  font-size: 16px;
+  font-weight: 600;
+  color: #457a97;
+  text-decoration: none;
+}
+
 .artisan-scroll-row::-webkit-scrollbar {
   height: 6px;
 }
@@ -238,38 +277,194 @@ body {
   padding: 40px 20px 20px;
   font-size: 14px;
 }
+/* Footer */
+.site-footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 4rem;
+  padding-bottom: 1rem;
+  justify-content: center;
+  width: 100%;
+  
+}
 
 .footer-content {
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
-  max-width: 1200px;
   margin: auto;
+  gap: 40px;
 }
 
-.footer-section {
-  flex: 1 1 200px;
+.footer-about {
+  flex: 1 1 250px;
+  width: 100%;
+  max-width: 300px;
 }
 
-.footer-section h3,
-.footer-section h4 {
+.footer-logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: white;
+}
+
+.footer-links {
+  flex: 1 1 150px;
+  min-width: 150px;
+}
+
+.footer-links h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
   margin-bottom: 10px;
-  color: #fff;
 }
 
-.footer-section p,
-.footer-section a {
-  color: #f0f0f0;
+.footer-links ul li a {
+  color: #ccc;
   text-decoration: none;
-  margin-bottom: 8px;
-  display: block;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: var(--background-light);
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: #ccc;
+  font-size: 18px;
+  margin-right: 12px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
 }
 
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
-  border-top: 1px solid #e0e0e0;
-  padding-top: 10px;
+  margin-top: 40px;
   font-size: 13px;
+  color: var(--background-light);
+  border-top: 1px solid var(--background-light);
+  padding-top: 20px;
+}
+
+.site-header {
+  width: 100%;
+  height: auto;
+  background-color: var(--background-light);;
+  color: var(--text-color);
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed; 
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-flex {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+
+.main-nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex: 1;
+  padding-left: 4rem;
+}
+
+.main-nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+
+}
+
+.header-cta {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cta-btn {
+  background-color: var(--primary-color);
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: var(--background-light);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover{
+  background-color: var(--primary-dark-hover);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn2 {
+  border: 2px solid  #B8660E;
+  color:  #B8660E;
+  background-color: var(--background-light);
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+ 
+}
+
+.cta-btn2:hover{
+  color: var(--primary-dark-hover);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 2px solid  #d35400;
 }

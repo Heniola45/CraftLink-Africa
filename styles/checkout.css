@@ -141,6 +141,27 @@ body {
   border-radius: 50%;
 }
 
+/*back arrow*/
+
+.back-arrow {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  margin: 1rem;
+  transition: color 0.2s ease;
+}
+
+.back-arrow i {
+  margin-right: 0.5rem;
+}
+
+.back-arrow:hover {
+  color: #007bff; /* or any brand color */
+}
+
+
 /* headings */
 h1 {
   font-size: var(--header-text);
