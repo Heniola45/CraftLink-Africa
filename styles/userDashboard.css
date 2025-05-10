@@ -273,3 +273,34 @@ body {
   padding-top: 10px;
   font-size: 13px;
 }
+
+.product-description {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.product-details {
+  font-size: 12px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.product-details li {
+  margin-bottom: 4px;
+}
+
+.add-to-cart-btn {
+  padding: 8px 12px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: var(--primary-dark-hover);
+}
