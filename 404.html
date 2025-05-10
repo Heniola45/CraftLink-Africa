@@ -1,0 +1,157 @@
+<!-- This is error 404 page. It shows up when a user visits a non-existent route.
+For instance, userdomain.github.io/(any pages that doesn't exist on the site) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CraftLink Africa</title>
+    <!-- add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- local style -->
+    <link rel="stylesheet" href="styles/404.css" />
+</head>
+<body>
+    <!-- Header section -->
+    <section>
+        <header class="site-header">
+            <div class="container header-flex">
+                <div class="logo">
+                    <img src="assets/logo header.svg" alt="Logo Header" />
+                </div>
+                
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <!-- You can use an icon here or text -->
+                    ☰
+                </button>
+                
+                <nav class="main-nav">
+                    <a href="index.html">HomePage</a>
+                    <a href="about.html" class="about-page">About Us</a>
+                    <a href="services.html" class="services-page">Local Services</a>
+                </nav>
+                
+                <div class="hero-button">
+                    <a href="./pages/login-in.html" class="cta-btn2">Login</a>
+                    <a href="./pages/sign-up.html" class="cta-btn">SignUp</a>
+                </div>
+            </div>
+        </header>
+      </section>
+
+
+    <!-- 404 Content -->
+    <section>
+      
+      <div class="error-graphic">
+        <svg viewBox="0 0 200 200" fill="currentColor" style="color: #B36D18;">
+          <path
+            d="M80 30L100 10L120 30L140 50V90L160 110V150L140 170H60L40 150V110L60 90V50L80 30Z"
+            fill-opacity="0.2"
+            class="shape-1"
+          ></path>
+          <path 
+            d="M100 40L120 60V100L140 120V140L120 160H80L60 140V120L80 100V60L100 40Z" 
+            fill-opacity="0.3"
+            class="shape-2"
+          ></path>
+          <text x="70" y="110" font-size="60" font-weight="bold" fill="#B36D18">
+            404
+          </text>
+        </svg>
+      </div>
+  
+      
+      <div class="error-content">
+        <h1>Oops! Page Not Found</h1>
+        <p>
+          The page you're looking for is missing. Let's help you find your way back.
+        </p>
+        <div class="action-buttons">
+          <a href="index.html" class="btn btn-primary">Return Home</a>
+          <a href="userDashboard.html" class="btn btn-outline">Explore Marketplace</a>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- footer section -->
+
+    <footer class="site-footer">
+        <div class="footer-content">
+          
+          <div class="footer-about">
+            <img src="assets/logo footer.svg" alt="CraftLink Africa Logo" class="footer-logo" />
+            <p>Connecting you to authentic African craftsmanship while empowering local artisans across the continent.</p>
+      
+            
+            <div class="footer-social">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+      
+          
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+      
+        
+          <div class="footer-links">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">Order Tracking</a></li>
+            </ul>
+          </div>
+      
+        
+          <div class="footer-links">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Affiliate Program</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Support</h4>
+            <ul>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">All Collections</a></li>
+            </ul>
+        </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 CraftLink Africa. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="javascript/error.js"></script>
+</body>
+</html>
