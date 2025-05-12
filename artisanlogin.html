@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <!-- add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- local style -->
+    <link rel="stylesheet" href="../styles/login.css" />
+  </head>
+  <body>
+    <section>
+      <header class="site-header">
+          <div class="container-header-flex">
+              <div class="logo">
+                  <img src="../logo svg/logo header.svg" alt="Logo Header" />
+              </div>
+             
+              <div class="back"><a href="../index.html">Back</a></div>
+          </div>
+      </header>
+    </section>
+    
+    <main>
+      <section>
+        <h1>Login form</h1>
+
+            <label for="userName"
+              >User Name:
+              <input type="text" id="userName" name="userName" required />
+            </label>
+             
+
+            <label for="password"
+              >Password:
+              <input type="password" id="password" name="password" required />
+            </label>
+          
+           
+            <label for="userType">User Type:</label>
+            <select id="userType" name="userType" required>
+              <option value="An artesian">Artesian</option>
+              <option value="A user">User</option>
+
+              
+            
+            </select>
+            <br />
+            
+            <button type="submit"><a href="artisandashboard.html">Submit</a></button>
+          </fieldset>
+          
+        </form>
+        <div id="forgot-password">
+          <a href="../pages/forgot-password.html">Forgot Password?</a>
+        </div>
+
+        <div id="sign-up-link">
+          <p>Don't have an account? <a href="../pages/sign-up.html">Sign Up</a></p>
+        </div>
+
+  
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Craftlink-Africa. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
