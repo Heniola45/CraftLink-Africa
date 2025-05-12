@@ -43,18 +43,24 @@
     <section class="hero">
       <div class="hero-container">
         <div class="hero-text">
-          <h2>Connecting Local Talent to The Global Market</h2>
-          <p>We believe in the power of local talent to inspire global change. Our platform connects African artisans, creators, and small-scale producers with international customers who value authenticity, culture, and creativity. </p>
+          <h2>Empowering African Women Artisans for Global Impact</h2>
+          <p>We champion women-led creativity across Africa by connecting female artisans and entrepreneurs to a global marketplace that values authenticity, skill, and heritage.</p>
+
           
           <div class="header-cta">
-            <a href="userDashboard2.html" class="cta-button">Explore Marketplace</a>
+            <a href="/pages/sign-up.html" class="cta-button">Become an Artisan</a>
           </div>
           
         </div>
 
-        <div class="hero-image-container">
+        <!-- <div class="hero-image-container">
           <img src="./assets/image.png" alt="image" class="hero-image">
+        </div> -->
+
+        <div class="hero-image-container">
+          <img src="./assets/image.png" alt="Hero Image" class="hero-image" id="heroImage">
         </div>
+        
 
       </div>
     </section>
@@ -83,6 +89,45 @@
             <h3>We Make it Easy to Discover, Hire, and Collaborate with Skilled Local Artisans Across Africa.</h3>
         </div>
       </div>
+    </section>
+
+    <section class="women-section">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="section-title">The Women We Empower</h2>
+        <p class="section-subtext">
+          CraftLink Africa is dedicated to empowering African women by providing a platform to showcase their talents, share their stories, and gain financial independence through their crafts.
+        </p>
+    
+        <div class="profiles">
+          <div class="profile-card">
+            <img src="./assets/pro2.png" alt="Faith from Nigeria" />
+            <h3>Kiki's Design's– Nigeria</h3>
+            <p>
+              "Before CraftLink, I could only showcase my designs locally. Now, my custom African-inspired outfits reach customers across the globe."
+            </p>
+          </div>
+    
+          <div class="profile-card">
+            <img src="./assets/pro3.png" alt="Amina from Kenya" />
+            <h3>Amina – Kenya</h3>
+            <p>
+              “Joining CraftLink allowed me to turn my beadwork into a sustainable business.”
+            </p>
+          </div>
+    
+          <div class="profile-card">
+            <img src="./assets/pro2.png" alt="Natasha from Ghana" />
+            <h3>Natasha – Zimbabwe</h3>
+            <p>
+              “This platform gave me visibility I never thought possible. I’m now mentoring other women in my village.”
+            </p>
+          </div>
+
+        </div>
+
+        
+      </div>
+      
     </section>
 
     <section class="product-scroll-section">
@@ -227,17 +272,21 @@
     <section class="book">
         <div class="book-container">
           <div>
-            <h2>We Provide You Verified and Qualified Service Providers.</h2>
-            <p>Your satisfaction is our main goal. Click on the “Hire Local Talent” button below to find and hire a service immediately.</p>
+            <div class="book-details">
+              <h2>We Provide You Verified and Qualified Female Artisans.</h2>
+              <p>Your satisfaction is our main goal. Click on the “Hire an Artisan” button below, to find and hire a service immediately.</p>
+            </div>
             
             <div class="hero-button">
-              <a href="./pages/sign-up.html" class="book-btn">Hire Local Talent</a>
+              <a href="./pages/sign-up.html" class="book-btn">Hire An</a>
             </div>
             
           </div>
   
-          <div>
-            <img src="./assets/image 2.png" alt="image" class="book-image">
+          <div class="book-images">
+            <img src="./assets/fashiondesigner.jpg" alt="image" class="book-image">
+            <img src="./assets/coblar.jpg" alt="image" class="book-image2">
+            
           </div>
   
         </div>
@@ -263,7 +312,6 @@
         </div>
       </section>
 
-
       <section class="artisan-signup-cta">
         <div class="cta-content">
           <h2>Showcase Your Talent to the World</h2>
@@ -272,7 +320,7 @@
         </div>
       </section>
       
-
+    
       <section class="limited-container">
         <div class="offer-image">
             <img src="./assets/offer1.png" alt="image" class="offer-image">
@@ -367,6 +415,32 @@
           <p>&copy; 2025 CraftLink Africa. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+      const heroImage = document.getElementById('heroImage');
+      const images = [
+        'assets/image.png',
+        'assets/fashiondesigner.jpg',
+        'assets/coblar.jpg'
+      ];
+    
+      let currentIndex = 0;
+    
+      function changeImage() {
+        heroImage.style.opacity = 0;
+    
+        setTimeout(() => {
+          currentIndex = (currentIndex + 1) % images.length;
+          heroImage.src = images[currentIndex];
+          heroImage.style.opacity = 1;
+        }, 500); // Wait 500ms to fade out before switching
+      }
+    
+      heroImage.src = images[currentIndex];
+      setInterval(changeImage, 3000); // Runs every 3 seconds
+    </script>
+    
+    
 </body>
     
 </html>
