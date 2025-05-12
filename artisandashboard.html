@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CraftLink Africa | Artisan Dashboard</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/artisandashboard.css" />
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container-header-flex">
+      <div class="logo">
+        <img src="assets/logo header.svg" alt="CraftLink Africa Logo" />
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">HomePage</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Local Services</a>
+      </nav>
+      <div class="user-profile">
+
+        <a href="/logout" class="logout-button">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dashboard Header -->
+  <header class="dashboard-header">
+    <h1>Welcome, Kiki's Design's</h1>
+    
+  </header>
+
+  <!-- Dashboard Main Content -->
+  <main class="dashboard-container">
+    <!-- Profile Section -->
+    <section class="profile-section" role="region" aria-labelledby="profile-heading">
+      <h2 id="profile-heading">Your Profile</h2>
+      <div class="profile-info">
+        <!-- Profile Picture -->
+        <div class="profile-picture">
+          <img src="/assets/Profilepic1.png" alt="Profile Picture" />
+          <a href="/edit-profile" class="btn" aria-label="Edit your profile">Edit Profile</a>
+        </div>
+        <!-- Profile Details -->
+        <div class="profile-details">
+          <p><strong>Name:</strong> Kiki Chukuma Rowanda</p>
+          <p><strong>Location:</strong> Abuja, Nigeria</p>
+          <p><strong>Bio:</strong> I’m a passionate fashion designer with over 7 years of experience creating custom African-inspired designs. I blend tradition and modern style to craft unique outfits for every occasion.</p>
+          <p><strong>Phone Number:</strong> 080237485589</p>
+        </div>
+      </div>
+      
+    </section>
+  
+    <!-- Products Section -->
+    <section class="products-section" role="region" aria-labelledby="products-heading">
+      <div class="product-listed">
+        <h2 id="products-heading">Listed Products</h2>
+        <a href="/add-product" class="btn" aria-label="Add a new product">Add New Product</a>
+      </div>
+      
+        <div class="products">
+          <!-- Repeat this block for each product -->
+          <div class="product-card">
+            <img src="assets/img/fashion/African Dashiki for Men Top and Pants Set African….jpeg" alt="Product" />
+            <h4>African Dashiki</h4>
+            <p class="price">₦8,500</p>
+        
+            <div class="submitbtn">
+              <a href="edit.html" class="cta-btn2">Edit</a>
+              <a href="delete.html" class="add-to-cart">Delete</a>
+
+            </div>
+          </div>
+    
+          <div class="product-card">
+            <img src="assets/img/fashion/OGE African Print One Sleeve Drape Mini Dress.jpeg" alt="Product" />
+            <h4>Drape Mini Dress</h4>
+            <p class="price">₦12,000</p>
+
+            <div class="submitbtn">
+                <a href="edit.html" class="cta-btn2">Edit</a>
+                <a href="delete.html" class="add-to-cart">Delete</a>
+  
+            </div>
+            </div>
+
+          <div class="product-card">
+              <img src="assets/img/fashion/This Womens Dresses item by Fortuneexpress has 4….jpeg"alt="Product" />
+              <h4>Embroidered Kaftan</h4>
+              <p class="price">₦12,000</p>
+             
+              <div class="submitbtn">
+                <a href="edit.html" class="cta-btn2">Edit</a>
+                <a href="delete.html" class="add-to-cart">Delete</a>
+  
+              </div>
+          </div>
+
+          <div class="product-card">
+              <img src="assets/img/fashion/67c63970-4c8f-4c0f-91dc-7e2711f0306e.jpeg"alt="Product" />
+              <h4>Couture for Kids</h4>
+              <p class="price">₦12,000</p>
+              <div class="submitbtn">
+                <a href="edit.html" class="cta-btn2">Edit</a>
+                <a href="delete.html" class="add-to-cart">Delete</a>
+  
+              </div>
+          </div>
+
+          <div class="product-card">
+              <img src="assets/img/fashion/OGE African Print One Sleeve Drape Mini Dress.jpeg" alt="Product" />
+              <h4>Drape Mini Dress</h4>
+              <p class="price">₦12,000</p>
+              <div class="submitbtn">
+                <a href="edit.html" class="cta-btn2">Edit</a>
+                <a href="delete.html" class="add-to-cart">Delete</a>
+  
+              </div>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/img/fashion/This Womens Dresses item by Fortuneexpress has 4….jpeg"alt="Product" />
+                <h4>Embroidered Kaftan</h4>
+                <p class="price">₦12,000</p>
+                <div class="submitbtn">
+                    <a href="edit.html" class="cta-btn2">Edit</a>
+                    <a href="delete.html" class="add-to-cart">Delete</a>
+      
+                </div>
+            </div>
+
+          
+          <!-- Add more product-card blocks as needed -->
+        </div>
+      
+    </section>
+  
+    <!-- Performance Section -->
+    <section class="stats-section" role="region" aria-labelledby="stats-heading">
+      <h2 id="stats-heading">Performance</h2>
+      <div class="stats-details">
+        <p><strong>Total Earn:</strong> 500,000</p>
+        <p><strong>Total Product Sold:</strong> 80</p>
+        <p><strong>Performance Score:</strong> 85%</p>
+        <p><strong>Ratings:</strong> 4.5/5</p>
+      </div>
+      
+    </section>
+  </main>
+  
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-about">
+        <img src="assets/logo footer.svg" alt="CraftLink Africa Logo" class="footer-logo" />
+        <p>Connecting you to authentic African craftsmanship while empowering local artisans across the continent.</p>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">Order Tracking</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Discount</a></li>
+          <li><a href="#">All Collections</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 CraftLink Africa. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
